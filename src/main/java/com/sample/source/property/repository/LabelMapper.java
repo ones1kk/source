@@ -6,7 +6,6 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface LabelMapper {
-
-    List<Label> findAllLabels();
+   List<Label>findAllLabel();
 
 }

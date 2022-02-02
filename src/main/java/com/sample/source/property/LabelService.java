@@ -10,8 +10,8 @@ public class LabelService {
 
     private final LabelMapper mapper;
 
-    public Object findAllLabels() {
-        return mapper.findAllLabels();
+    public Object findAllLabel() {
+        return mapper.findAllLabel();
     }
 
 }

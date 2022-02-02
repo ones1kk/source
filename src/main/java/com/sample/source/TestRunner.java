@@ -7,11 +7,11 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 @Slf4j
-@Component
 @RequiredArgsConstructor
+@Configuration
 public class TestRunner implements ApplicationRunner {
 
     private final DataSource dataSource;
@@ -24,7 +24,7 @@ public class TestRunner implements ApplicationRunner {
         log.info("url : {} ", connection.getMetaData().getURL());
         log.info("userName : {} ", connection.getMetaData().getUserName());
         log.info("productName : {} ", connection.getMetaData().getDatabaseProductName());
-        log.info("labels {} ", labelService.findAllLabels());
+        log.info("labels {} ", labelService.findAllLabel());
 
     }
 }
