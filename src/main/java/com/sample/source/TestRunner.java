@@ -1,7 +1,9 @@
 package com.sample.source;
 
+import com.sample.source.property.Label;
 import com.sample.source.property.LabelService;
 import java.sql.Connection;
+import java.util.List;
 import javax.sql.DataSource;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

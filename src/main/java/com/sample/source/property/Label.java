@@ -13,7 +13,7 @@ public class Label {
 
     private String labelId;
 
-    private String labelKorNm;
+    private String labelKrNm;
 
     private String labelEngNm;
 
